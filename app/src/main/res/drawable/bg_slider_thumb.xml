@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 3D Ground Drop Shadow -->
+    <item android:top="4dp">
+        <shape android:shape="rectangle">
+            <corners android:radius="12dp" />
+            <size android:width="26dp" android:height="36dp" />
+            <solid android:color="#261104" />
+        </shape>
+    </item>
+
+    <!-- Outer Dark Carved Wood Rim -->
+    <item android:bottom="3dp">
+        <shape android:shape="rectangle">
+            <corners android:radius="12dp" />
+            <solid android:color="#3A1907" />
+        </shape>
+    </item>
+
+    <!-- 3D Bevel Ridge -->
+    <item android:top="1dp" android:bottom="5dp" android:left="1.5dp" android:right="1.5dp">
+        <shape android:shape="rectangle">
+            <corners android:radius="11dp" />
+            <solid android:color="#783A11" />
+        </shape>
+    </item>
+
+    <!-- Main Polished Wood Capsule Face -->
+    <item android:top="2dp" android:bottom="6dp" android:left="2dp" android:right="2dp">
+        <shape android:shape="rectangle">
+            <corners android:radius="10dp" />
+            <gradient
+                android:angle="0"
+                android:startColor="#8A4A1C"
+                android:centerColor="#D68A44"
+                android:endColor="#8A4A1C" />
+        </shape>
+    </item>
+
+    <!-- Top Gloss Reflex Rim -->
+    <item android:top="3dp" android:bottom="22dp" android:left="4dp" android:right="4dp">
+        <shape android:shape="rectangle">
+            <corners android:radius="7dp" />
+            <gradient
+                android:angle="270"
+                android:startColor="#65FFFFFF"
+                android:endColor="#00FFFFFF" />
+        </shape>
+    </item>
+
+    <!-- Center Vertical Wooden Accent Line -->
+    <item android:top="7dp" android:bottom="11dp" android:left="12dp" android:right="12dp">
+        <shape android:shape="rectangle">
+            <corners android:radius="2dp" />
+            <solid android:color="#502409" />
+        </shape>
+    </item>
+</layer-list>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Drop shadow -->
+    <item>
+        <shape android:shape="rectangle">
+            <corners
+                android:topLeftRadius="24dp"
+                android:topRightRadius="24dp"
+                android:bottomLeftRadius="24dp"
+                android:bottomRightRadius="24dp" />
+            <solid android:color="#241205" />
+        </shape>
+    </item>
+    <!-- Outer wooden rim -->
+    <item android:top="2dp" android:bottom="4dp" android:left="2dp" android:right="2dp">
+        <shape android:shape="rectangle">
+            <corners
+                android:topLeftRadius="22dp"
+                android:topRightRadius="22dp"
+                android:bottomLeftRadius="22dp"
+                android:bottomRightRadius="22dp" />
+            <gradient
+                android:angle="270"
+                android:startColor="#8A4E21"
+                android:endColor="#542B0D" />
+        </shape>
+    </item>
+    <!-- Inner warm wooden dock surface -->
+    <item android:top="5dp" android:bottom="8dp" android:left="5dp" android:right="5dp">
+        <shape android:shape="rectangle">
+            <corners
+                android:topLeftRadius="18dp"
+                android:topRightRadius="18dp"
+                android:bottomLeftRadius="18dp"
+                android:bottomRightRadius="18dp" />
+            <gradient
+                android:angle="270"
+                android:startColor="#B57238"
+                android:centerColor="#965825"
+                android:endColor="#784118" />
+        </shape>
+    </item>
+    <!-- Top inner highlight -->
+    <item android:top="6dp" android:left="8dp" android:right="8dp" android:height="3dp">
+        <shape android:shape="rectangle">
+            <corners
+                android:topLeftRadius="16dp"
+                android:topRightRadius="16dp" />
+            <solid android:color="#40FFFFFF" />
+        </shape>
+    </item>
+</layer-list>

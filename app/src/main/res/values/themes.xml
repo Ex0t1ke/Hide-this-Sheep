@@ -1,0 +1,25 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.MyApplication" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/btn_primary_base</item>
+        <item name="colorPrimaryVariant">@color/btn_primary_dark</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/wood_post_base</item>
+        <item name="colorSecondaryVariant">@color/wood_post_dark</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <!-- Status / navigation bars: fully transparent, content draws edge-to-edge. -->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowContentTransitions">true</item>
+    </style>
+
+    <!-- Dialog theme for mode selection and dialogs -->
+    <style name="Theme.MyApplication.Dialog" parent="Theme.MaterialComponents.DayNight.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+</resources>

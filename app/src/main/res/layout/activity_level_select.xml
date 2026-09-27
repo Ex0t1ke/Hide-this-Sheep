@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#152F15"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    tools:context=".LevelSelectActivity">
+
+    <!-- Scenic Pasture Meadow Background -->
+    <ImageView
+        android:id="@+id/iv_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_campaign_meadow"
+        android:contentDescription="Фон" />
+
+    <!-- Top Status Bar with Star Counter and Back Button -->
+    <LinearLayout
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:paddingTop="32dp"
+        android:paddingBottom="8dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Stars Counter Pill -->
+        <LinearLayout
+            android:id="@+id/pill_stars"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="@drawable/bg_hud_pill"
+            android:paddingStart="12dp"
+            android:paddingEnd="16dp">
+
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:src="@drawable/ic_star_gold"
+                android:layout_marginEnd="8dp" />
+
+            <TextView
+                android:id="@+id/tv_total_stars"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:text="0/90"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:shadowColor="#261205"
+                android:shadowDx="0"
+                android:shadowDy="2"
+                android:shadowRadius="2" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <!-- Back Button (3D Wood Button) -->
+        <FrameLayout
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@drawable/bg_btn_wood_card"
+            android:paddingStart="16dp"
+            android:paddingEnd="18dp"
+            android:clickable="true"
+            android:focusable="true">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:src="@drawable/ic_arrow_back"
+                    android:layout_marginEnd="6dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-black"
+                    android:text="НАЗАД"
+                    android:textColor="#FFFFFF"
+                    android:textSize="13sp"
+                    android:shadowColor="#261205"
+                    android:shadowDx="0"
+                    android:shadowDy="2"
+                    android:shadowRadius="2" />
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+    <!-- Main Campaign Board Container (Single cohesive wooden board) -->
+    <LinearLayout
+        android:id="@+id/board_levels"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/bg_wood_board"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:paddingStart="14dp"
+        android:paddingEnd="14dp"
+        android:paddingTop="36dp"
+        android:paddingBottom="16dp"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        app:layout_constraintTop_toBottomOf="@+id/topBar"
+        app:layout_constraintBottom_toTopOf="@+id/layout_pagination"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_bias="0.48">
+
+        <!-- 3-Column Level Grid sitting directly on the warm wood board -->
+        <com.example.myapplication.ExpandedGridView
+            android:id="@+id/grid_levels"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:numColumns="3"
+            android:stretchMode="columnWidth"
+            android:gravity="center"
+            android:horizontalSpacing="6dp"
+            android:verticalSpacing="8dp"
+            android:scrollbars="none"
+            android:overScrollMode="never" />
+
+    </LinearLayout>
+
+    <!-- 3D Volumetric CAMPAIGN Banner Plank, mounted proudly over the top edge of board_levels -->
+    <FrameLayout
+        android:id="@+id/iv_campaign_ribbon"
+        android:layout_width="wrap_content"
+        android:layout_height="52dp"
+        android:minWidth="230dp"
+        android:background="@drawable/bg_campaign_banner_plank"
+        android:elevation="8dp"
+        android:paddingStart="26dp"
+        android:paddingEnd="26dp"
+        app:layout_constraintTop_toTopOf="@+id/board_levels"
+        app:layout_constraintBottom_toTopOf="@+id/board_levels"
+        app:layout_constraintStart_toStartOf="@+id/board_levels"
+        app:layout_constraintEnd_toEndOf="@+id/board_levels">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="4dp"
+            android:fontFamily="sans-serif-black"
+            android:text="★  КАМПАНИЯ  ★"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:letterSpacing="0.06"
+            android:shadowColor="#2E1303"
+            android:shadowDx="0"
+            android:shadowDy="2"
+            android:shadowRadius="3" />
+    </FrameLayout>
+
+    <!-- Bottom Pagination Controls (Square 3D Wood Arrow Buttons in the meadow) -->
+    <LinearLayout
+        android:id="@+id/layout_pagination"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Page Prev Button: 3D Wood Square Button with Chevron Left -->
+        <ImageView
+            android:id="@+id/btn_page_prev"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:background="@drawable/bg_btn_3d_wood"
+            android:src="@drawable/ic_chevron_left_bold"
+            android:scaleType="centerInside"
+            android:padding="12dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:contentDescription="Предыдущая страница" />
+
+        <!-- Page Indicator Dots -->
+        <LinearLayout
+            android:id="@+id/dots_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp">
+
+            <View
+                android:id="@+id/dot_page1"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:background="@drawable/bg_hud_pill"
+                android:layout_marginEnd="10dp" />
+
+            <View
+                android:id="@+id/dot_page2"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:background="@drawable/bg_hud_pill"
+                android:alpha="0.4" />
+        </LinearLayout>
+
+        <!-- Page Next Button: 3D Wood Square Button with Chevron Right -->
+        <ImageView
+            android:id="@+id/btn_page_next"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:background="@drawable/bg_btn_3d_wood"
+            android:src="@drawable/ic_chevron_right_bold"
+            android:scaleType="centerInside"
+            android:padding="12dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:contentDescription="Следующая страница" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

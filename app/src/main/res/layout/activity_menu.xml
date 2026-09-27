@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/menu_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_menu_gradient_sky_grass"
+    tools:context=".MenuActivity">
+
+    <!-- Fullscreen Hero Cover Artwork with clean grassy meadow -->
+    <ImageView
+        android:id="@+id/iv_menu_cover"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_menu_cover"
+        android:contentDescription="Hide this Sheep" />
+
+    <!-- 3D PLAY Button: Centered, responsive, beautiful -->
+    <LinearLayout
+        android:id="@+id/btn_play"
+        android:layout_width="0dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="14dp"
+        android:background="@drawable/bg_btn_3d_green"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="horizontal"
+        android:gravity="center"
+        app:layout_constraintWidth_max="340dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/menu_bottom_row">
+
+        <!-- 3D Triangle Play Icon -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="▶"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="4dp"
+            android:shadowColor="#18360B"
+            android:shadowDx="0"
+            android:shadowDy="3"
+            android:shadowRadius="4" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ИГРАТЬ"
+            android:textColor="#FFFFFF"
+            android:textSize="26sp"
+            android:layout_marginBottom="4dp"
+            android:fontFamily="sans-serif-black"
+            android:letterSpacing="0.04"
+            android:shadowColor="#18360B"
+            android:shadowDx="0"
+            android:shadowDy="3"
+            android:shadowRadius="4" />
+    </LinearLayout>
+
+    <!-- Bottom Action Row: GUIDE and SETTINGS Buttons -->
+    <LinearLayout
+        android:id="@+id/menu_bottom_row"
+        android:layout_width="0dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="36dp"
+        android:orientation="horizontal"
+        app:layout_constraintWidth_max="340dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <!-- 3D GUIDE Button -->
+        <LinearLayout
+            android:id="@+id/btn_guide"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginEnd="6dp"
+            android:background="@drawable/bg_btn_3d_wood"
+            android:clickable="true"
+            android:focusable="true"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_book_guide"
+                android:layout_marginEnd="6dp"
+                android:layout_marginBottom="3dp"
+                android:contentDescription="Гайд" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ГАЙД"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:layout_marginBottom="3dp"
+                android:fontFamily="sans-serif-black"
+                android:letterSpacing="0.03"
+                android:shadowColor="#281305"
+                android:shadowDx="0"
+                android:shadowDy="2"
+                android:shadowRadius="3" />
+        </LinearLayout>
+
+        <!-- 3D SETTINGS Button -->
+        <LinearLayout
+            android:id="@+id/btn_settings"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginStart="6dp"
+            android:background="@drawable/bg_btn_3d_wood"
+            android:clickable="true"
+            android:focusable="true"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_gear"
+                app:tint="#FFF3DE"
+                android:layout_marginEnd="6dp"
+                android:layout_marginBottom="3dp"
+                android:contentDescription="Настройки" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="НАСТРОЙКИ"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:layout_marginBottom="3dp"
+                android:fontFamily="sans-serif-black"
+                android:letterSpacing="0.03"
+                android:shadowColor="#281305"
+                android:shadowDx="0"
+                android:shadowDy="2"
+                android:shadowRadius="3" />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

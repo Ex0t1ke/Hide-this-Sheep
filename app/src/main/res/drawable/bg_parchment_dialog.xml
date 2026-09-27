@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Outer wood border with shadow -->
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="22dp" />
+            <solid android:color="#2B1406" />
+        </shape>
+    </item>
+    <!-- Mid wood border -->
+    <item android:top="3dp" android:bottom="5dp" android:left="3dp" android:right="3dp">
+        <shape android:shape="rectangle">
+            <corners android:radius="20dp" />
+            <gradient
+                android:angle="270"
+                android:startColor="#8A4E21"
+                android:endColor="#542B0D" />
+        </shape>
+    </item>
+    <!-- Inner parchment surface -->
+    <item android:top="8dp" android:bottom="10dp" android:left="8dp" android:right="8dp">
+        <shape android:shape="rectangle">
+            <corners android:radius="14dp" />
+            <gradient
+                android:angle="270"
+                android:startColor="#FBF4DF"
+                android:centerColor="#F5E8C7"
+                android:endColor="#EDE0BC" />
+            <stroke android:width="2dp" android:color="#D6C49C" />
+        </shape>
+    </item>
+</layer-list>

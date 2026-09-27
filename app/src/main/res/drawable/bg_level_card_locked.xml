@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 3D Drop Shadow Base -->
+    <item android:top="4dp">
+        <shape android:shape="rectangle">
+            <corners android:radius="14dp" />
+            <solid android:color="#160802" />
+        </shape>
+    </item>
+
+    <!-- Outer Dark Wood Rim -->
+    <item android:bottom="3dp">
+        <shape android:shape="rectangle">
+            <corners android:radius="14dp" />
+            <solid android:color="#2E1304" />
+        </shape>
+    </item>
+
+    <!-- Warm Beveled Wood Ridge -->
+    <item android:top="2dp" android:bottom="5dp" android:left="2dp" android:right="2dp">
+        <shape android:shape="rectangle">
+            <corners android:radius="12dp" />
+            <solid android:color="#7E421A" />
+        </shape>
+    </item>
+
+    <!-- Inner Dark Groove -->
+    <item android:top="3dp" android:bottom="6dp" android:left="3dp" android:right="3dp">
+        <shape android:shape="rectangle">
+            <corners android:radius="11dp" />
+            <solid android:color="#280E03" />
+        </shape>
+    </item>
+
+    <!-- Chocolate Wooden Recessed Face -->
+    <item android:top="4dp" android:bottom="7dp" android:left="4dp" android:right="4dp">
+        <shape android:shape="rectangle">
+            <corners android:radius="10dp" />
+            <gradient
+                android:angle="270"
+                android:startColor="#542B0D"
+                android:centerColor="#462108"
+                android:endColor="#361705" />
+        </shape>
+    </item>
+
+    <!-- Subtle Top Light Highlight -->
+    <item android:top="5dp" android:bottom="46dp" android:left="6dp" android:right="6dp">
+        <shape android:shape="rectangle">
+            <corners
+                android:topLeftRadius="9dp"
+                android:topRightRadius="9dp"
+                android:bottomLeftRadius="2dp"
+                android:bottomRightRadius="2dp" />
+            <gradient
+                android:angle="270"
+                android:startColor="#30FFFFFF"
+                android:endColor="#00FFFFFF" />
+        </shape>
+    </item>
+</layer-list>

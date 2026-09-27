@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Legacy Material defaults (kept for theme compatibility) -->
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Grass -->
+    <color name="grass_base">#5CAA53</color>
+    <color name="grass_base_dark">#4E9646</color>
+    <color name="grass_light">#79C46E</color>
+    <color name="grass_blade_dark">#3F7E3A</color>
+    <color name="grass_flower_yellow">#FFE082</color>
+    <color name="grass_flower_center">#FFB300</color>
+    <color name="grass_stone">#9E9285</color>
+    <color name="grass_stone_dark">#7A7166</color>
+    <color name="grass_dirt_patch">#8D6E4A</color>
+
+    <!-- Wood / fences -->
+    <color name="wood_post_light">#B37B45</color>
+    <color name="wood_post_base">#8C5A2E</color>
+    <color name="wood_post_dark">#6B4423</color>
+    <color name="wood_plank_light">#C08A4E</color>
+    <color name="wood_plank_base">#A06B36</color>
+    <color name="wood_plank_dark">#734A24</color>
+    <color name="wood_grain">#5A3A1E</color>
+    <color name="wood_highlight">#E0AD73</color>
+
+    <!-- Sheep -->
+    <color name="sheep_wool">#FDFDFB</color>
+    <color name="sheep_wool_shadow">#DCD8CE</color>
+    <color name="sheep_face">#4A4038</color>
+    <color name="sheep_face_light">#6B5D51</color>
+    <color name="sheep_leg">#3A322B</color>
+
+    <!-- Wolves -->
+    <color name="wolf_body">#7C8791</color>
+    <color name="wolf_body_dark">#565F68</color>
+    <color name="wolf_body_light">#9FA9B2</color>
+    <color name="wolf_belly">#C7CDD2</color>
+    <color name="wolf_face">#3D444B</color>
+    <color name="wolf_eye">#FFD54F</color>
+
+    <!-- UI -->
+    <color name="ui_hud_bg_top">#E6203020</color>
+    <color name="ui_hud_bg_bottom">#CC1A2818</color>
+    <color name="ui_pill_bg">#3A2E22</color>
+    <color name="ui_pill_stroke">#5C4B38</color>
+    <color name="ui_bottom_panel_top">#F2E9DCC0</color>
+    <color name="ui_bottom_panel_bottom">#F5D9C79E</color>
+    <color name="ui_card_bg">#FFF7EE</color>
+    <color name="ui_card_stroke">#E0C9A6</color>
+    <color name="ui_card_bg_disabled">#E4DED3</color>
+    <color name="ui_text_light">#FFFDF7</color>
+    <color name="ui_text_muted">#E7DCC8</color>
+    <color name="ui_gold">#FFD54F</color>
+
+    <color name="btn_primary_top">#7BC96F</color>
+    <color name="btn_primary_base">#4CAF50</color>
+    <color name="btn_primary_dark">#2E7D32</color>
+    <color name="btn_secondary_top">#B0A99C</color>
+    <color name="btn_secondary_base">#8D8375</color>
+    <color name="btn_secondary_dark">#655D51</color>
+    <color name="btn_tertiary_top">#FFCC80</color>
+    <color name="btn_tertiary_base">#FFA726</color>
+    <color name="btn_tertiary_dark">#EF6C00</color>
+
+    <color name="valid_highlight">#6642D639</color>
+    <color name="invalid_highlight">#66E53935</color>
+</resources>

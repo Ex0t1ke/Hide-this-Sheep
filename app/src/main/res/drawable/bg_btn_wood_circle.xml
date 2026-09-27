@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Pressed state -->
+    <item android:state_pressed="true">
+        <layer-list>
+            <!-- Outer deep shadow -->
+            <item>
+                <shape android:shape="oval">
+                    <solid android:color="#241004" />
+                </shape>
+            </item>
+            <!-- Inset bevel border -->
+            <item android:top="2dp" android:bottom="2dp" android:left="2dp" android:right="2dp">
+                <shape android:shape="oval">
+                    <solid android:color="#5C2D0C" />
+                </shape>
+            </item>
+            <!-- Darker pressed wood surface -->
+            <item android:top="4dp" android:bottom="3dp" android:left="4dp" android:right="4dp">
+                <shape android:shape="oval">
+                    <gradient
+                        android:angle="270"
+                        android:startColor="#8A4614"
+                        android:endColor="#B36622" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+
+    <!-- Normal default state -->
+    <item>
+        <layer-list>
+            <!-- Bottom 3D drop shadow -->
+            <item android:top="3dp">
+                <shape android:shape="oval">
+                    <solid android:color="#241004" />
+                </shape>
+            </item>
+            <!-- Outer dark wood rim -->
+            <item android:bottom="3dp">
+                <shape android:shape="oval">
+                    <solid android:color="#361705" />
+                </shape>
+            </item>
+            <!-- Inner highlight rim -->
+            <item android:top="2dp" android:bottom="5dp" android:left="2dp" android:right="2dp">
+                <shape android:shape="oval">
+                    <solid android:color="#EFA85D" />
+                </shape>
+            </item>
+            <!-- Warm golden oak wooden gradient face -->
+            <item android:top="3dp" android:bottom="6dp" android:left="3dp" android:right="3dp">
+                <shape android:shape="oval">
+                    <gradient
+                        android:angle="270"
+                        android:startColor="#F0AB60"
+                        android:centerColor="#D68434"
+                        android:endColor="#A85718" />
+                </shape>
+            </item>
+            <!-- Top glossy reflex crescent -->
+            <item android:top="4dp" android:bottom="26dp" android:left="8dp" android:right="8dp">
+                <shape android:shape="oval">
+                    <gradient
+                        android:angle="270"
+                        android:startColor="#80FFFFFF"
+                        android:endColor="#00FFFFFF" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+</selector>

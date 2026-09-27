@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Pressed state -->
+    <item android:state_pressed="true">
+        <layer-list>
+            <!-- Drop Shadow -->
+            <item android:top="2dp">
+                <shape android:shape="rectangle">
+                    <corners android:radius="14dp" />
+                    <solid android:color="#122508" />
+                </shape>
+            </item>
+            <!-- Bevel bottom stroke -->
+            <item android:top="2dp" android:bottom="0dp" android:left="0dp" android:right="0dp">
+                <shape android:shape="rectangle">
+                    <corners android:radius="14dp" />
+                    <solid android:color="#1B380A" />
+                </shape>
+            </item>
+            <!-- Pressed button body -->
+            <item android:top="5dp" android:bottom="2dp" android:left="2dp" android:right="2dp">
+                <shape android:shape="rectangle">
+                    <corners android:radius="12dp" />
+                    <gradient
+                        android:angle="270"
+                        android:startColor="#6AB822"
+                        android:centerColor="#529B16"
+                        android:endColor="#3D7A0E" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+
+    <!-- Normal 3D state -->
+    <item>
+        <layer-list>
+            <!-- Deep 3D Shadow -->
+            <item android:top="6dp">
+                <shape android:shape="rectangle">
+                    <corners android:radius="16dp" />
+                    <solid android:color="#0F2206" />
+                </shape>
+            </item>
+            <!-- 3D Bottom Base / Extrusion Rim -->
+            <item android:bottom="4dp">
+                <shape android:shape="rectangle">
+                    <corners android:radius="14dp" />
+                    <solid android:color="#1B3A0B" />
+                </shape>
+            </item>
+            <!-- 3D Bevel Lip -->
+            <item android:top="2dp" android:bottom="9dp" android:left="2dp" android:right="2dp">
+                <shape android:shape="rectangle">
+                    <corners android:radius="12dp" />
+                    <solid android:color="#357014" />
+                </shape>
+            </item>
+            <!-- Main Vibrant Green Surface Gradient -->
+            <item android:top="2dp" android:bottom="10dp" android:left="2dp" android:right="2dp">
+                <shape android:shape="rectangle">
+                    <corners android:radius="12dp" />
+                    <gradient
+                        android:angle="270"
+                        android:startColor="#A5F047"
+                        android:centerColor="#7AD427"
+                        android:endColor="#4D9C13" />
+                </shape>
+            </item>
+            <!-- Top Gloss Highlight -->
+            <item android:top="4dp" android:bottom="36dp" android:left="8dp" android:right="8dp">
+                <shape android:shape="rectangle">
+                    <corners android:radius="10dp" />
+                    <gradient
+                        android:angle="270"
+                        android:startColor="#70FFFFFF"
+                        android:endColor="#00FFFFFF" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+</selector>

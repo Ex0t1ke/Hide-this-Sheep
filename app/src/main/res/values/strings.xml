@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Hide this Sheep</string>
+    <string name="title_level">Уровень %1$d</string>
+    <string name="btn_start">НАЧАТЬ</string>
+    <string name="goal_sheep">Овец: %1$d</string>
+    <string name="goal_wolves">Волков: %1$d</string>
+    <string name="goal_fences">Доп. заборы: %1$d</string>
+    <string name="goal_gates">Входы: %1$d</string>
+    <string name="win_title">Уровень пройден!</string>
+    <string name="lose_title">Защита прорвана</string>
+    <string name="rating_3_stars">Безупречная защита!</string>
+    <string name="rating_2_stars">Надёжная защита!</string>
+    <string name="rating_1_star">Защита выдержала!</string>
+    <string name="btn_next_level">Следующий уровень</string>
+    <string name="btn_retry">Попробовать снова</string>
+    <string name="btn_menu">В главное меню</string>
+    <string name="btn_check_defense">ПРОВЕРИТЬ ЗАЩИТУ</string>
+    <string name="btn_undo">ОТМЕНИТЬ</string>
+    <string name="btn_reset">ЗАНОВО</string>
+    <string name="card_sheep">ОВЦА</string>
+    <string name="card_fence">ЗАБОР</string>
+</resources>

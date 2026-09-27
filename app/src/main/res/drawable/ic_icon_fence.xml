@@ -1,0 +1,100 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+
+    <!-- Bottom Soft Ground Shadow -->
+    <path
+        android:fillColor="#30000000"
+        android:pathData="M24,44 C34,44 42,42 42,39 C42,36 34,38 24,38 C14,38 6,36 6,39 C6,42 14,44 24,44 Z" />
+
+    <!-- Horizontal Rail 1 (Top Bar Shadow) -->
+    <path
+        android:fillColor="#241004"
+        android:pathData="M6,17 L42,17 L42,23 L6,23 Z" />
+    <!-- Horizontal Rail 1 (Top Bar Face) -->
+    <path
+        android:fillColor="#C4732B"
+        android:strokeColor="#361705"
+        android:strokeWidth="1.2"
+        android:strokeLineJoin="round"
+        android:pathData="M6,16 L42,16 L42,22 L6,22 Z" />
+    <!-- Top Rail 1 Highlight Rim -->
+    <path
+        android:fillColor="#FAD078"
+        android:pathData="M7,17 L41,17 L41,18.5 L7,18.5 Z" />
+
+    <!-- Horizontal Rail 2 (Bottom Bar Shadow) -->
+    <path
+        android:fillColor="#241004"
+        android:pathData="M6,27 L42,27 L42,33 L6,33 Z" />
+    <!-- Horizontal Rail 2 (Bottom Bar Face) -->
+    <path
+        android:fillColor="#A85718"
+        android:strokeColor="#361705"
+        android:strokeWidth="1.2"
+        android:strokeLineJoin="round"
+        android:pathData="M6,26 L42,26 L42,32 L6,32 Z" />
+    <!-- Bottom Rail 2 Highlight Rim -->
+    <path
+        android:fillColor="#F0AB60"
+        android:pathData="M7,27 L41,27 L41,28.5 L7,28.5 Z" />
+
+    <!-- Left Vertical Post Shadow -->
+    <path
+        android:fillColor="#241004"
+        android:pathData="M11,11 L19,11 L19,41 L11,41 Z" />
+    <!-- Left Vertical Post Face -->
+    <path
+        android:fillColor="#D68434"
+        android:strokeColor="#361705"
+        android:strokeWidth="1.4"
+        android:strokeLineJoin="round"
+        android:pathData="M14.5,8 L19,10 L19,40 L11,40 L11,10 Z" />
+    <!-- Left Post Pointed Top Highlight -->
+    <path
+        android:fillColor="#FFDCA8"
+        android:pathData="M14.5,9 L18,10.5 L12,10.5 Z" />
+    <!-- Left Post Light Side -->
+    <path
+        android:fillColor="#F5B262"
+        android:pathData="M12,11 L14.5,11 L14.5,39 L12,39 Z" />
+
+    <!-- Left Post Wooden Peg Nails -->
+    <path
+        android:fillColor="#291203"
+        android:pathData="M14,18 L16,18 L16,20 L14,20 Z" />
+    <path
+        android:fillColor="#291203"
+        android:pathData="M14,28 L16,28 L16,30 L14,30 Z" />
+
+    <!-- Right Vertical Post Shadow -->
+    <path
+        android:fillColor="#241004"
+        android:pathData="M29,11 L37,11 L37,41 L29,41 Z" />
+    <!-- Right Vertical Post Face -->
+    <path
+        android:fillColor="#D68434"
+        android:strokeColor="#361705"
+        android:strokeWidth="1.4"
+        android:strokeLineJoin="round"
+        android:pathData="M32.5,8 L37,10 L37,40 L29,40 L29,10 Z" />
+    <!-- Right Post Pointed Top Highlight -->
+    <path
+        android:fillColor="#FFDCA8"
+        android:pathData="M32.5,9 L36,10.5 L30,10.5 Z" />
+    <!-- Right Post Light Side -->
+    <path
+        android:fillColor="#F5B262"
+        android:pathData="M30,11 L32.5,11 L32.5,39 L30,39 Z" />
+
+    <!-- Right Post Wooden Peg Nails -->
+    <path
+        android:fillColor="#291203"
+        android:pathData="M32,18 L34,18 L34,20 L32,20 Z" />
+    <path
+        android:fillColor="#291203"
+        android:pathData="M32,28 L34,28 L34,30 L32,30 Z" />
+
+</vector>

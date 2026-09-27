@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Pressed state -->
+    <item android:state_pressed="true">
+        <layer-list>
+            <item android:top="2dp">
+                <shape android:shape="rectangle">
+                    <corners android:radius="24dp" />
+                    <solid android:color="#241004" />
+                </shape>
+            </item>
+            <item android:top="2dp" android:bottom="0dp" android:left="0dp" android:right="0dp">
+                <shape android:shape="rectangle">
+                    <corners android:radius="24dp" />
+                    <solid android:color="#361A07" />
+                </shape>
+            </item>
+            <item android:top="5dp" android:bottom="2dp" android:left="3dp" android:right="3dp">
+                <shape android:shape="rectangle">
+                    <corners android:radius="21dp" />
+                    <gradient
+                        android:angle="270"
+                        android:startColor="#B87737"
+                        android:centerColor="#A36326"
+                        android:endColor="#894E1A" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+
+    <!-- Normal state -->
+    <item>
+        <layer-list>
+            <!-- Drop Shadow -->
+            <item android:top="5dp">
+                <shape android:shape="rectangle">
+                    <corners android:radius="26dp" />
+                    <solid android:color="#1A0B03" />
+                </shape>
+            </item>
+            <!-- Heavy Dark Contrast Rim (Stroke) -->
+            <item android:bottom="3dp">
+                <shape android:shape="rectangle">
+                    <corners android:radius="24dp" />
+                    <solid android:color="#361A07" />
+                </shape>
+            </item>
+            <!-- 3D Bevel Ridge -->
+            <item android:top="2dp" android:bottom="6dp" android:left="2dp" android:right="2dp">
+                <shape android:shape="rectangle">
+                    <corners android:radius="22dp" />
+                    <solid android:color="#6E3812" />
+                </shape>
+            </item>
+            <!-- Warm Wood Face -->
+            <item android:top="2dp" android:bottom="7dp" android:left="2dp" android:right="2dp">
+                <shape android:shape="rectangle">
+                    <corners android:radius="22dp" />
+                    <gradient
+                        android:angle="270"
+                        android:startColor="#E4A462"
+                        android:centerColor="#CE8844"
+                        android:endColor="#A86326" />
+                </shape>
+            </item>
+            <!-- Top Light Highlight -->
+            <item android:top="3dp" android:bottom="20dp" android:left="6dp" android:right="6dp">
+                <shape android:shape="rectangle">
+                    <corners android:radius="18dp" />
+                    <gradient
+                        android:angle="270"
+                        android:startColor="#40FFFFFF"
+                        android:endColor="#00FFFFFF" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+</selector>

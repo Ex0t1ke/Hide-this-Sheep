@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog_dim_overlay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+    <LinearLayout
+        android:id="@+id/dialog_frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/bg_wood_board"
+        android:orientation="vertical"
+        android:paddingStart="22dp"
+        android:paddingEnd="22dp"
+        android:paddingTop="26dp"
+        android:paddingBottom="26dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:fontFamily="sans-serif-black"
+            android:text="ВЫБЕРИТЕ РЕЖИМ"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp"
+            android:letterSpacing="0.03"
+            android:shadowColor="#2C1608"
+            android:shadowDx="0"
+            android:shadowDy="2"
+            android:shadowRadius="3" />
+
+        <!-- 1. Campaign Mode: Story Mode -->
+        <LinearLayout
+            android:id="@+id/btn_mode_campaign"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_btn_green_play"
+            android:clickable="true"
+            android:focusable="true"
+            android:orientation="vertical"
+            android:paddingStart="18dp"
+            android:paddingEnd="18dp"
+            android:paddingTop="14dp"
+            android:paddingBottom="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:text="КАМПАНИЯ"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:shadowColor="#18360B"
+                android:shadowDx="0"
+                android:shadowDy="2"
+                android:shadowRadius="3" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="30 уровней с сюжетом и загадками"
+                android:textColor="#F4FFE8"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <!-- 2. Survival Mode: Endless High Score -->
+        <LinearLayout
+            android:id="@+id/btn_mode_endless"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/bg_btn_wood_card"
+            android:clickable="true"
+            android:focusable="true"
+            android:orientation="vertical"
+            android:paddingStart="18dp"
+            android:paddingEnd="18dp"
+            android:paddingTop="14dp"
+            android:paddingBottom="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:text="ВЫЖИВАНИЕ"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:shadowColor="#281305"
+                android:shadowDx="0"
+                android:shadowDy="2"
+                android:shadowRadius="3" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="Бесконечный режим на рекорд очков"
+                android:textColor="#FFF3DE"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</FrameLayout>

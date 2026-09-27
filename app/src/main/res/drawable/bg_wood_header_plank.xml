@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Drop shadow -->
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="14dp" />
+            <solid android:color="#261205" />
+        </shape>
+    </item>
+    <!-- Outer wood border -->
+    <item android:top="2dp" android:bottom="4dp" android:left="2dp" android:right="2dp">
+        <shape android:shape="rectangle">
+            <corners android:radius="12dp" />
+            <gradient
+                android:angle="270"
+                android:startColor="#8A4E21"
+                android:endColor="#542B0D" />
+        </shape>
+    </item>
+    <!-- Inner plank body -->
+    <item android:top="4dp" android:bottom="6dp" android:left="4dp" android:right="4dp">
+        <shape android:shape="rectangle">
+            <corners android:radius="10dp" />
+            <gradient
+                android:angle="270"
+                android:startColor="#A05D29"
+                android:centerColor="#7E451B"
+                android:endColor="#613311" />
+        </shape>
+    </item>
+    <!-- Top plank highlight -->
+    <item android:top="5dp" android:left="6dp" android:right="6dp" android:height="2dp">
+        <shape android:shape="rectangle">
+            <corners android:topLeftRadius="8dp" android:topRightRadius="8dp" />
+            <solid android:color="#44FFFFFF" />
+        </shape>
+    </item>
+</layer-list>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Drop shadow/border -->
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="16dp" />
+            <solid android:color="#261205" />
+        </shape>
+    </item>
+    <!-- Outer wood rim -->
+    <item android:top="2dp" android:bottom="3dp" android:left="2dp" android:right="2dp">
+        <shape android:shape="rectangle">
+            <corners android:radius="14dp" />
+            <gradient
+                android:angle="270"
+                android:startColor="#8A4E21"
+                android:endColor="#542B0D" />
+        </shape>
+    </item>
+    <!-- Inner pill body -->
+    <item android:top="3dp" android:bottom="5dp" android:left="3dp" android:right="3dp">
+        <shape android:shape="rectangle">
+            <corners android:radius="12dp" />
+            <gradient
+                android:angle="270"
+                android:startColor="#9C5A27"
+                android:centerColor="#7C431B"
+                android:endColor="#5E3110" />
+        </shape>
+    </item>
+</layer-list>

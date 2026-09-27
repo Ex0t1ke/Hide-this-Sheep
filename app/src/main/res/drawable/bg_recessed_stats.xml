@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Golden rim -->
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="14dp" />
+            <solid android:color="#CFA055" />
+        </shape>
+    </item>
+    <!-- Dark inset shadow -->
+    <item android:bottom="2dp" android:left="2dp" android:right="2dp" android:top="2dp">
+        <shape android:shape="rectangle">
+            <corners android:radius="12dp" />
+            <solid android:color="#261205" />
+        </shape>
+    </item>
+    <!-- Recessed interior -->
+    <item android:bottom="3dp" android:left="3dp" android:right="3dp" android:top="3dp">
+        <shape android:shape="rectangle">
+            <corners android:radius="11dp" />
+            <gradient
+                android:angle="270"
+                android:startColor="#472611"
+                android:endColor="#2D1608" />
+        </shape>
+    </item>
+</layer-list>

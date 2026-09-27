@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_root"
+    android:layout_width="match_parent"
+    android:layout_height="82dp"
+    android:layout_margin="3dp"
+    android:background="@drawable/bg_level_card_unlocked"
+    android:clickable="true"
+    android:focusable="true">
+
+    <!-- Content for Unlocked Level (3D Vibrant Green Wood Tile) -->
+    <LinearLayout
+        android:id="@+id/layout_unlocked"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:paddingTop="4dp"
+        android:paddingBottom="6dp">
+
+        <TextView
+            android:id="@+id/tv_level_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:text="1"
+            android:textColor="#FFFFFF"
+            android:textSize="26sp"
+            android:shadowColor="#18360B"
+            android:shadowDx="0"
+            android:shadowDy="2"
+            android:shadowRadius="3" />
+
+        <!-- 3 Stars Row -->
+        <LinearLayout
+            android:id="@+id/layout_stars"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="2dp">
+
+            <ImageView
+                android:id="@+id/iv_star1"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginEnd="4dp"
+                android:src="@drawable/ic_star_gold" />
+
+            <ImageView
+                android:id="@+id/iv_star2"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginEnd="4dp"
+                android:src="@drawable/ic_star_gold" />
+
+            <ImageView
+                android:id="@+id/iv_star3"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:src="@drawable/ic_star_gold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Content for Locked Level (Recessed Carved Wood Pocket) -->
+    <LinearLayout
+        android:id="@+id/layout_locked"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:visibility="gone"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp">
+
+        <TextView
+            android:id="@+id/tv_locked_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:text="10"
+            android:textColor="#D49C65"
+            android:textSize="15sp"
+            android:shadowColor="#1E0A02"
+            android:shadowDx="0"
+            android:shadowDy="1.5"
+            android:shadowRadius="2" />
+
+        <ImageView
+            android:id="@+id/iv_lock"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="2dp"
+            android:src="@drawable/ic_lock" />
+    </LinearLayout>
+
+</FrameLayout>

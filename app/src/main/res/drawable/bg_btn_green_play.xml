@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Pressed state -->
+    <item android:state_pressed="true">
+        <layer-list>
+            <!-- Deep base shadow -->
+            <item android:top="3dp">
+                <shape android:shape="rectangle">
+                    <corners android:radius="30dp" />
+                    <solid android:color="#122508" />
+                </shape>
+            </item>
+            <!-- Dark stroke frame -->
+            <item android:top="3dp" android:bottom="0dp" android:left="0dp" android:right="0dp">
+                <shape android:shape="rectangle">
+                    <corners android:radius="30dp" />
+                    <solid android:color="#1A380A" />
+                </shape>
+            </item>
+            <!-- Inner button pressed face -->
+            <item android:top="6dp" android:bottom="3dp" android:left="3dp" android:right="3dp">
+                <shape android:shape="rectangle">
+                    <corners android:radius="27dp" />
+                    <gradient
+                        android:angle="270"
+                        android:startColor="#6AB822"
+                        android:centerColor="#529B16"
+                        android:endColor="#3D7A0E" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+
+    <!-- Normal state -->
+    <item>
+        <layer-list>
+            <!-- Drop Shadow under button -->
+            <item android:top="6dp">
+                <shape android:shape="rectangle">
+                    <corners android:radius="32dp" />
+                    <solid android:color="#102206" />
+                </shape>
+            </item>
+            <!-- Heavy Dark Contrast Rim (Stroke) -->
+            <item android:bottom="4dp">
+                <shape android:shape="rectangle">
+                    <corners android:radius="30dp" />
+                    <solid android:color="#1A380A" />
+                </shape>
+            </item>
+            <!-- 3D Bevel Edge -->
+            <item android:top="3dp" android:bottom="8dp" android:left="3dp" android:right="3dp">
+                <shape android:shape="rectangle">
+                    <corners android:radius="27dp" />
+                    <solid android:color="#2E6112" />
+                </shape>
+            </item>
+            <!-- Vibrant Green Face -->
+            <item android:top="3dp" android:bottom="10dp" android:left="3dp" android:right="3dp">
+                <shape android:shape="rectangle">
+                    <corners android:radius="27dp" />
+                    <gradient
+                        android:angle="270"
+                        android:startColor="#9CE842"
+                        android:centerColor="#76CE26"
+                        android:endColor="#4FA015" />
+                </shape>
+            </item>
+            <!-- Top Gloss Highlight -->
+            <item android:top="5dp" android:bottom="26dp" android:left="8dp" android:right="8dp">
+                <shape android:shape="rectangle">
+                    <corners android:radius="22dp" />
+                    <gradient
+                        android:angle="270"
+                        android:startColor="#50FFFFFF"
+                        android:endColor="#00FFFFFF" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+</selector>

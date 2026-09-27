@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Dark Shadow Base -->
+    <item android:top="3dp">
+        <shape android:shape="rectangle">
+            <corners android:radius="16dp" />
+            <solid android:color="#140A03" />
+        </shape>
+    </item>
+    <!-- Outer Inactive Wood Rim -->
+    <item android:bottom="2dp">
+        <shape android:shape="rectangle">
+            <corners android:radius="16dp" />
+            <solid android:color="#281305" />
+        </shape>
+    </item>
+    <!-- Inset Rim -->
+    <item android:top="2dp" android:bottom="4dp" android:left="2dp" android:right="2dp">
+        <shape android:shape="rectangle">
+            <corners android:radius="14dp" />
+            <solid android:color="#4D270E" />
+        </shape>
+    </item>
+    <!-- Recessed Inactive Face -->
+    <item android:top="3dp" android:bottom="5dp" android:left="3dp" android:right="3dp">
+        <shape android:shape="rectangle">
+            <corners android:radius="13dp" />
+            <gradient
+                android:angle="270"
+                android:startColor="#331A0B"
+                android:centerColor="#261307"
+                android:endColor="#1E0E05" />
+        </shape>
+    </item>
+</layer-list>

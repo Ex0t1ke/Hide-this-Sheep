@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Outer dark wood shadow/border -->
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="16dp" />
+            <solid android:color="#2A1608" />
+        </shape>
+    </item>
+    <!-- Inner warm wood board -->
+    <item android:top="2dp" android:bottom="4dp" android:left="2dp" android:right="2dp">
+        <shape android:shape="rectangle">
+            <corners android:radius="14dp" />
+            <gradient
+                android:angle="270"
+                android:startColor="#6E3D18"
+                android:endColor="#4A250B" />
+        </shape>
+    </item>
+    <!-- Subtle top highlight -->
+    <item android:top="3dp" android:left="4dp" android:right="4dp" android:height="3dp">
+        <shape android:shape="rectangle">
+            <corners android:topLeftRadius="12dp" android:topRightRadius="12dp" />
+            <solid android:color="#33FFFFFF" />
+        </shape>
+    </item>
+</layer-list>

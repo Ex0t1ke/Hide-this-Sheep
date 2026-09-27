@@ -1,0 +1,74 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+
+    <!-- Soft circular shadow -->
+    <path
+        android:fillColor="#30000000"
+        android:pathData="M24,44 C34,44 42,40 42,35 C42,30 34,32 24,32 C14,32 6,30 6,35 C6,40 14,44 24,44 Z" />
+
+    <!-- Circular Badge Outer Dark Wood Rim -->
+    <path
+        android:fillColor="#2B1406"
+        android:pathData="M 24,4 a 20,20 0 1,0 0.001,0 Z" />
+
+    <!-- Circular Badge Golden Bevel -->
+    <path
+        android:fillColor="#E59E50"
+        android:pathData="M 24,4.5 a 18.5,18.5 0 1,0 0.001,0 Z" />
+
+    <!-- Circular Badge Inner Dark Wood Face -->
+    <path
+        android:fillColor="#4D280E"
+        android:pathData="M 24,6.5 a 16.5,16.5 0 1,0 0.001,0 Z" />
+
+    <!-- Left Gate Post -->
+    <path
+        android:fillColor="#D68434"
+        android:strokeColor="#241004"
+        android:strokeWidth="1.2"
+        android:pathData="M11,14 L15,12 L15,36 L11,36 Z" />
+    <path
+        android:fillColor="#FFDCA8"
+        android:pathData="M11,14 L15,12 L13,11 Z" />
+
+    <!-- Right Gate Post -->
+    <path
+        android:fillColor="#D68434"
+        android:strokeColor="#241004"
+        android:strokeWidth="1.2"
+        android:pathData="M33,12 L37,14 L37,36 L33,36 Z" />
+    <path
+        android:fillColor="#FFDCA8"
+        android:pathData="M33,12 L37,14 L35,11 Z" />
+
+    <!-- Arch Top Beam -->
+    <path
+        android:fillColor="#B85F1B"
+        android:strokeColor="#241004"
+        android:strokeWidth="1.2"
+        android:pathData="M10,13 L38,13 L38,17 L10,17 Z" />
+    <path
+        android:fillColor="#FAD078"
+        android:pathData="M11,13.5 L37,13.5 L37,14.5 L11,14.5 Z" />
+
+    <!-- Dynamic 3D Entrance Direction Arrow -->
+    <!-- Arrow Shadow -->
+    <path
+        android:fillColor="#241004"
+        android:pathData="M24,19 L32,27 L27,27 L27,37 L21,37 L21,27 L16,27 Z" />
+    <!-- Arrow Face Vibrant Gold/Amber -->
+    <path
+        android:fillColor="#FFC107"
+        android:strokeColor="#E65100"
+        android:strokeWidth="1.2"
+        android:strokeLineJoin="round"
+        android:pathData="M24,18 L32,26 L27,26 L27,36 L21,36 L21,26 L16,26 Z" />
+    <!-- Arrow Highlight -->
+    <path
+        android:fillColor="#FFF9C4"
+        android:pathData="M24,19.5 L29,24.5 L26,24.5 L26,34 L22,34 L22,24.5 L19,24.5 Z" />
+
+</vector>
