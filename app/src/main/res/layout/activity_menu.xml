@@ -14,7 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="centerCrop"
-        android:src="@drawable/bg_menu_cover"
+        android:src="@drawable/bg_menu_cover_v2"
         android:contentDescription="Hide this Sheep" />
 
     <!-- 3D PLAY Button: Centered, responsive, beautiful -->
